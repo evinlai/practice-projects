@@ -1,0 +1,27 @@
+h1 {
+    color: white;
+    background-color: black;
+    padding: 3%;
+    text-align: center;
+}
+/* button {
+    margin-top: 2px;
+    margin-bottom: 2px;
+} */
+
+img {
+    padding: 1px;
+    
+}
+
+.viewers::after {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    content: "\f328";
+    display:  inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+
+}
