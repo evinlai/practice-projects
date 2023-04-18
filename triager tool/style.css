@@ -25,3 +25,6 @@ img {
     -webkit-font-smoothing: antialiased;
 
 }
+.list-group-item {
+    color: rgb(50, 50, 50);
+}

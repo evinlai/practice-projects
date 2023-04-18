@@ -25,37 +25,43 @@
         </div>
 
         
-         <div class="mainBtns"> 
-             <button class="btn btn-block btn-outline-dark ctcbtn" value="Unable to Store Open">OPEN</button>
-             <button class="btn btn-block btn-outline-dark ctcbtn" value="Unable to POS Close/reOpen">Close/Reopen</button>
-             <button class="btn btn-block btn-outline-dark ctcbtn" value="Unable to POS CLOSE">CLOSE</button> 
+         <div class="list-group list-group-horizontal mainBtns"> 
+             <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="Unable to Store Open">OPEN</button>
+             <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="Unable to POS Close/reOpen">Close/Reopen</button>
+             <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="Unable to POS CLOSE">CLOSE</button> 
+            
          </div >
-         <h2>Short description</h2>
-         <div id="ctc" class="list-group">
-            <button class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="production is offline - store unable to take any orders">production is offline - store unable to take any orders</button>
-            <button class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="CIT error  - POS status retrieval can not be completed">CIT error "POS status retrieval can not be completed"</button>
-            <button class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="unable to retrieve current status from wst error in CIT">unable to retrieve current status from wst error in CIT</button>
-            <button class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="store needs to manual close/open">store needs to manual close/open</button>
-            <button class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="Menu item missing on all POS">Menu item missing on all POS</button>
-            <button class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="unable to complete end business day">unable to complete end business day</button>
-            <button class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="Unable to retrieve current status from wst error">Unable to retrieve current status from wst</button>
-            <button class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="Maintenance required - UT error on PED ">Maintenance required - UT error on PED</button>
-         </div>
-         <h2>Transfer to</h2>
+         
+         <h4>Transfer to</h4>
              <div class="transfr"> 
-                <button class="btn btn-secondary ctcbtn" value="_bro">Bronze</button>
-               <button class="btn btn-secondary ctcbtn" value="_si">Silver</button>
-               <button class="btn btn-secondary ctcbtn" value="_gol">Gold</button>
-               <button class="btn btn-secondary ctcbtn" value="_pla">Platinum</button>
-               <button class="btn btn-secondary ctcbtn" value="rest_t">eRest</button>
-               <button class="btn btn-secondary ctcbtn" value="ue_t">Special Venue</button>
-               <button class="btn btn-secondary ctcbtn" value="3_t">otp3</button>
-               <button class="btn btn-secondary ctcbtn" value="_rf">RFM</button>
-               <button class="btn btn-secondary ctcbtn" value="_ast">AST</button>
-               <button class="btn btn-secondary ctcbtn" value="_csr">CSR</button>
-               <button class="btn btn-secondary ctcbtn" value="techsup_t">Spanish</button>
+               <ul class="list-group list-group-horizontal">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="_bro">Bronze</button>
+                <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="_si">Silver</button>
+                <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="_gol">Gold</button>
+                <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="ue_t">SpecialVenue</button>
+                <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="3_t">otp3</button>
+               </ul>
+               <ul class="list-group list-group-horizontal">
+                <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="rest_t">eRest</button>
+                <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="_pla">Platinum</button>
+                <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="_rf">RFM</button>
+                <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="_ast">AST</button>
+                <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="_csr">CSR</button>
+                <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="techsup_t">Spanish</button>
+               </ul>   
             </div>
-            <script src="javascript.js"></script>      
+            <h4>Short description</h4>
+         <div id="ctc" class="list-group">
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="production is offline - store unable to take any orders">production is offline - store unable to take any orders</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="CIT error  - POS status retrieval can not be completed">CIT error "POS status retrieval can not be completed"</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="unable to retrieve current status from wst error in CIT">unable to retrieve current status from wst error in CIT</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="store needs to manual close/open">store needs to manual close/open</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="Menu item missing on all POS">Menu item missing on all POS</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="unable to complete end business day">unable to complete end business day</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="Unable to serve off orders">Unable to serve off orders</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="Maintenance required - UT error on PED ">Maintenance required - UT error on PED</button>
+         </div>
+               
             <div> 
              <h2>Add item</h2>
                <div class="input-group mb-3">
@@ -64,7 +70,7 @@
                </div>
             </div>   
       </div>      
-      
+      <script src="javascript.js"></script>   
    </body>
    
 </html>
