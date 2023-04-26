@@ -10,22 +10,23 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       </head>
     <body>
-      <h1>Triage click-paste</h1>
+      
       <div class="container"> 
-        <div>          
+        <h1>Triage click-paste</h1>
+        <div class="copyBtns">          
             <div class="input-group mb-3">
                <input type="text" class="form-control" placeholder="Caller's name" aria-label="Recipient's username" aria-describedby="button-addon2">
-               <button class="btn btn-outline-secondary" value="facda" type="button" id="button-addon2"><span><img src="/icons/content_copy_FILL0_wght400_GRAD0_opsz48.svg" alt="Copy" height="24px"></span></button>
+               <button class="btn btn-outline-secondary" value="caller" type="button" id="button-addon2"><span><img src="/icons/content_copy_FILL0_wght400_GRAD0_opsz48.svg" alt="Copy" height="24px"></span>Copy</button>
             </div>       
             <div class="input-group mb-3">
                   <input type="text" class="form-control" placeholder="Short description" aria-label="Recipient's username" aria-describedby="button-addon2">
-                  <button class="btn btn-outline-secondary" type="button" id="button-addon2"><span><img src="/icons/content_copy_FILL0_wght400_GRAD0_opsz48.svg" alt="Copy" height="24px"></button>
+                  <button class="btn btn-outline-secondary" value="desc" type="button" id="button-addon2"><span><img src="/icons/content_copy_FILL0_wght400_GRAD0_opsz48.svg" alt="Copy" height="24px"></span>Copy</button>
             </div>
              
         </div>
 
-        
-         <div class="list-group list-group-horizontal mainBtns"> 
+      <div class="mainBtns">
+         <div class="list-group list-group-horizontal "> 
              <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="Unable to Store Open">OPEN</button>
              <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="Unable to POS Close/reOpen">Close/Reopen</button>
              <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="Unable to POS CLOSE">CLOSE</button> 
@@ -33,7 +34,7 @@
          </div >
          
          <h4>Transfer to</h4>
-             <div class="transfr"> 
+             <div class=""> 
                <ul class="list-group list-group-horizontal">
                 <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="_bro">Bronze</button>
                 <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="_si">Silver</button>
@@ -50,19 +51,26 @@
                 <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="techsup_t">Spanish</button>
                </ul>   
             </div>
-            <h4>Short description</h4>
-         <div id="ctc" class="list-group">
+            <h4>Common issues</h4>
+         <div class="list-group ">
             <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="production is offline - store unable to take any orders">production is offline - store unable to take any orders</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="wst is offline - store is running on backup production">wst is offline - store is running on backup production</button>
             <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="CIT error  - POS status retrieval can not be completed">CIT error "POS status retrieval can not be completed"</button>
             <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="unable to retrieve current status from wst error in CIT">unable to retrieve current status from wst error in CIT</button>
             <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="store needs to manual close/open">store needs to manual close/open</button>
             <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="Menu item missing on all POS">Menu item missing on all POS</button>
-            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="unable to complete end business day">unable to complete end business day</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="Auto inject fails on mcdelivery/mobile orders">Auto inject fails</button>
+            <ul class="list-group list-group-horizontal">
+               <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="unable to complete end business day">end business day</button>
+               <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="unable to complete start business day">start business day</button>
+            </ul>
             <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="Unable to serve off orders">Unable to serve off orders</button>
             <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="Maintenance required - UT error on PED ">Maintenance required - UT error on PED</button>
             <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="Cashless terminal failed to open for business day error">Cashless terminal failed to open</button>
 
          </div>
+         
+      </div>
                
             <div> 
              <h2>Add item</h2>

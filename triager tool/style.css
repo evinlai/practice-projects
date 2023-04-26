@@ -4,10 +4,6 @@ h1 {
     padding: 3%;
     text-align: center;
 }
-/* button {
-    margin-top: 2px;
-    margin-bottom: 2px;
-} */
 
 img {
     padding: 1px;
@@ -25,6 +21,6 @@ img {
     -webkit-font-smoothing: antialiased;
 
 }
-.list-group-item {
-    color: rgb(50, 50, 50);
-}
+/* .list-group-item {
+    color: rgb(48, 45, 45);
+} */
