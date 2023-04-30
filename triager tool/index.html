@@ -15,12 +15,12 @@
         <h1>Triage click-paste</h1>
         <div class="copyBtns">          
             <div class="input-group mb-3">
-               <input type="text" class="form-control" placeholder="Caller's name" aria-label="Recipient's username" aria-describedby="button-addon2">
-               <button class="btn btn-outline-secondary" value="caller" type="button" id="button-addon2"><span><img src="/icons/content_copy_FILL0_wght400_GRAD0_opsz48.svg" alt="Copy" height="24px"></span>Copy</button>
+               <input type="text" class="form-control caller" placeholder="Caller's name" aria-label="Recipient's username" aria-describedby="button-addon2">
+               <button onclick= "manClick()" value = "tange" class="btn btn-outline-secondary callerName" type="button" id="button-addon2"><span><img src="/icons/content_copy_FILL0_wght400_GRAD0_opsz48.svg" alt="Copy" height="24px"></span>Copy</button>
             </div>       
             <div class="input-group mb-3">
-                  <input type="text" class="form-control" placeholder="Short description" aria-label="Recipient's username" aria-describedby="button-addon2">
-                  <button class="btn btn-outline-secondary" value="desc" type="button" id="button-addon2"><span><img src="/icons/content_copy_FILL0_wght400_GRAD0_opsz48.svg" alt="Copy" height="24px"></span>Copy</button>
+                  <input type="text" class="form-control descInput" placeholder="Short description" aria-label="Recipient's username" aria-describedby="button-addon2">
+                  <button onclick = "copyDesc()" class="btn btn-outline-secondary desc" type="button" id="button-addon2"><span><img src="/icons/content_copy_FILL0_wght400_GRAD0_opsz48.svg" alt="Copy" height="24px"></span>Copy</button>
             </div>
              
         </div>
@@ -53,20 +53,20 @@
             </div>
             <h4>Common issues</h4>
          <div class="list-group ">
-            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="production is offline - store unable to take any orders">production is offline - store unable to take any orders</button>
-            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="wst is offline - store is running on backup production">wst is offline - store is running on backup production</button>
-            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="CIT error  - POS status retrieval can not be completed">CIT error "POS status retrieval can not be completed"</button>
-            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="unable to retrieve current status from wst error in CIT">unable to retrieve current status from wst error in CIT</button>
-            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="store needs to manual close/open">store needs to manual close/open</button>
-            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="Menu item missing on all POS">Menu item missing on all POS</button>
-            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="Auto inject fails on mcdelivery/mobile orders">Auto inject fails</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="production is offline - store unable to take any orders">production is offline - store unable to take any orders</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="wst is offline - store is running on backup production">wst is offline - store is running on backup production</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="CIT error  - POS status retrieval can not be completed">CIT error "POS status retrieval can not be completed"</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="unable to retrieve current status from wst error in CIT">unable to retrieve current status from wst error in CIT</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="store needs to manual close/open">store needs to manual close/open</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="Menu item missing on all POS">Menu item missing on all POS</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="Auto inject fails on mcdelivery/mobile orders">Auto inject fails</button>
             <ul class="list-group list-group-horizontal">
-               <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="unable to complete end business day">end business day</button>
-               <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="unable to complete start business day">start business day</button>
+               <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="unable to complete end business day">end business day</button>
+               <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="unable to complete start business day">start business day</button>
             </ul>
-            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="Unable to serve off orders">Unable to serve off orders</button>
-            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="Maintenance required - UT error on PED ">Maintenance required - UT error on PED</button>
-            <button type="button" class="list-group-item list-group-item-action list-group-item-light ctcbtn" value="Cashless terminal failed to open for business day error">Cashless terminal failed to open</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="Unable to serve off orders">Unable to serve off orders</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="Maintenance required - UT error on PED ">Maintenance required - UT error on PED</button>
+            <button type="button" class="list-group-item list-group-item-action list-group-item-light" value="Cashless terminal failed to open for business day error">Cashless terminal failed to open</button>
 
          </div>
          
