@@ -9,7 +9,9 @@ let callName = document.getElementsByClassName('.callerName');
 
 let descrptn = document.querySelector('.desc');
 let descText = document.querySelector('.descInput');
+let addItemTex = document.querySelector('.addItem');
 
+let coIss = document.querySelector('#iss');
 // //button action - input box text copied to clipboard
 // copyBtn.addEventListener('click', e => {
 //     // console.log("clicked")
@@ -77,3 +79,15 @@ mainBtn.addEventListener('click', e => {
     }
 
 })
+// button action - add listed item on common issues
+function addBtn() {
+    let newList = document.createElement('button');
+    newList.innerHTML = addItemTex.value;
+    newList.value = addItemTex.value;
+    let nList = document.body.appendChild(newList);
+    console.log(nList);
+    nList.setAttribute('class', 'list-group-item list-group-item-action list-group-item-light');
+    coIss.appendChild(nList);
+    console.log(coIss);
+
+}
