@@ -40,7 +40,8 @@ function manClick() {
     console.log('nothing to copy')
 } else {
  navigator.clipboard.writeText(callName.value).then(() => {
-    console.log('copied', callName.value)
+    console.log('copied', callName.value);
+    callerTxt.value = "";
             }, () => {
     console.log('failed to copy')
     });
@@ -57,7 +58,8 @@ function copyDesc() {
        console.log('nothing to copy')
    } else {
     navigator.clipboard.writeText(descrptn.value).then(() => {
-       console.log('copied', descrptn.value)
+       console.log('copied', descrptn.value);
+       descText.value = "";
                }, () => {
        console.log('failed to copy')
        });
