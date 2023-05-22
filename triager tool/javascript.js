@@ -12,25 +12,7 @@ let descText = document.querySelector('.descInput');
 let addItemTex = document.querySelector('.addItem');
 
 let coIss = document.querySelector('#iss');
-// //button action - input box text copied to clipboard
-// copyBtn.addEventListener('click', e => {
-//     // console.log("clicked")
-//     // console.log(e)
-//     let cbtn = e.target;
-    
-    
-    
-//         cbtn.value = callerTxt.value;
-//         // console.log(cbtn.value)
 
-//         navigator.clipboard.writeText(cbtn.value).then(() => {
-//             console.log('copied', cbtn.value)
-//                     }, () => {
-//             console.log('nothing to copy')
-//             });
-    
-    
-// })
 // Copy Caller name button
 function manClick() {
 
@@ -90,6 +72,7 @@ function addBtn() {
     console.log(nList);
     nList.setAttribute('class', 'list-group-item list-group-item-action list-group-item-light');
     coIss.appendChild(nList);
-    console.log(coIss);
+    addItemTex.value = "";
+    
 
 }
